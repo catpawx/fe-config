@@ -1,0 +1,31 @@
+{
+  "name": "@catpawx/prettier-config-preset",
+  "version": "0.0.1",
+  "description": "💪🏻  猫爪联盟前端团队 prettier 规则",
+  "authors": [
+    "相甫 <xiangfu_git@163.com>"
+  ],
+  "homepage": "https://github.com/jswangtao/fe-config#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "directories": {},
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jswangtao/fe-config.git"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "bugs": {
+    "url": "https://github.com/jswangtao/fe-config/issues"
+  }
+}
