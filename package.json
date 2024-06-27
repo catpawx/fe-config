@@ -1,0 +1,11 @@
+{
+  "name": "fe-config",
+  "description": "前端的规范",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.3"
+  }
+}
