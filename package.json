@@ -7,5 +7,10 @@
   "devDependencies": {
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   }
 }
