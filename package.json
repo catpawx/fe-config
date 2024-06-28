@@ -10,11 +10,15 @@
     "prepare": "husky",
     "lint-staged": "lint-staged --allow-empty",
     "test:eslint-config-preset": "ts-node ./packages/eslint-config-preset/__tests__/app.ts",
-    "test:eslint-config-react": "ts-node ./packages/eslint-config-react/__tests__/app.ts"
+    "test:eslint-config-react": "ts-node ./packages/eslint-config-react/__tests__/app.ts",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "devDependencies": {
     "@catpawx/eslint-config-preset": "workspace:*",
     "@catpawx/prettier-config-preset": "workspace:*",
+    "@changesets/cli": "^2.27.6",
     "@commitlint/cli": "^19.3.0",
     "@types/eslint": "^8.56.10",
     "@types/node": "^20.14.9",
@@ -31,5 +35,4 @@
       "path": "node_modules/cz-git"
     }
   }
- 
 }
