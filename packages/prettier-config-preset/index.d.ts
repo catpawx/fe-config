@@ -1,5 +1,5 @@
-import type { Options } from "prettier";
+import type { Options } from 'prettier'
 
-const prettierConfigPreset: Options;
+const prettierConfigPreset: Options
 
-export = prettierConfigPreset;
+export = prettierConfigPreset

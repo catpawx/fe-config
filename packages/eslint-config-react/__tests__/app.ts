@@ -3,7 +3,7 @@ import { ESLint } from 'eslint'
 const main = async () => {
   const eslint = new ESLint()
 
-  const results = await eslint.lintFiles([`${__dirname}/code/*.ts`])
+  const results = await eslint.lintFiles([`${__dirname}/code/**/*.tsx`])
 
   const formatter = await eslint.loadFormatter('stylish')
   const resultText = formatter.format(results)

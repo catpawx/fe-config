@@ -1,7 +1,7 @@
 {
-  "name": "@catpawx/eslint-config-preset",
+  "name": "@catpawx/eslint-config-react",
   "version": "0.0.1",
-  "description": "💪🏻 猫爪联盟前端团队 ESLint 规则",
+  "description": "💪🏻 猫爪联盟前端团队 ESLint react 规则",
   "authors": [
     "相甫 <xiangfu_git@163.com>"
   ],
@@ -21,21 +21,16 @@
     "url": "git+https://github.com/jswangtao/fe-config.git"
   },
   "keywords": [
-    "eslint",
+ "eslint",
+    "react",
     "typescript"
   ],
   "bugs": {
     "url": "https://github.com/jswangtao/fe-config/issues"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~6.19.0",
-    "@typescript-eslint/parser": "~6.19.0",
-    "eslint": "~8.56.0",
-    "eslint-config-alloy": "~5.1.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-import-resolver-typescript": "~3.6.0",
-    "eslint-plugin-import": "~2.29.0",
-    "eslint-plugin-prettier": "~5.1.1",
-    "prettier": "~3.2.0"
+    "eslint-plugin-react": "~7.34.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "@catpawx/eslint-config-preset": "workspace:*"
   }
 }

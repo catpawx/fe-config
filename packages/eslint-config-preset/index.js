@@ -4,15 +4,15 @@
 
 module.exports = {
   extends: [
-    "alloy",
-    "alloy/typescript",
-    "plugin:prettier/recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-    "plugin:import/errors",
-    "plugin:import/warnings",
+    'alloy',
+    'alloy/typescript',
+    'plugin:prettier/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:import/errors',
+    'plugin:import/warnings',
   ],
-  plugins: ["import"],
+  plugins: ['import'],
   env: {
     browser: true,
     commonjs: true,
@@ -23,14 +23,14 @@ module.exports = {
   // 解决 TypeScript 内置类型 no-undef
   overrides: [
     {
-      files: ["**/*.ts?(x)"],
+      files: ['**/*.ts?(x)'],
       rules: {
         // TypeScript's `noFallthroughCasesInSwitch` option is more robust (#6906)
-        "default-case": "off",
+        'default-case': 'off',
         // 'tsc' already handles this (https://github.com/typescript-eslint/typescript-eslint/issues/291)
-        "no-dupe-class-members": "off",
+        'no-dupe-class-members': 'off',
         // 'tsc' already handles this (https://github.com/typescript-eslint/typescript-eslint/issues/477)
-        "no-undef": "off",
+        'no-undef': 'off',
       },
     },
   ],
@@ -38,63 +38,63 @@ module.exports = {
   rules: {
     // 自定义你的规则
     // interface 是一个空，继承其他申明可能不会做扩展
-    "@typescript-eslint/no-empty-interface": 0,
+    '@typescript-eslint/no-empty-interface': 0,
     // 数据转换 !!var +var
-    "no-implicit-coercion": 0,
-    "import/order": [
+    'no-implicit-coercion': 0,
+    'import/order': [
       1,
       {
         groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
         ],
         pathGroups: [
           {
-            pattern: "@/**",
-            group: "internal",
-            position: "after",
+            pattern: '@/**',
+            group: 'internal',
+            position: 'after',
           },
         ],
-        "newlines-between": "always",
+        'newlines-between': 'always',
         alphabetize: {
-          order: "asc",
+          order: 'asc',
           caseInsensitive: true,
         },
       },
     ],
-    "import/default": 0,
-    "no-unused-vars": 0,
+    'import/default': 0,
+    'no-unused-vars': 0,
     /**
      * 禁止变量名与上层作用域内的已定义的变量重复
      */
-    "@typescript-eslint/no-shadow": 2,
+    '@typescript-eslint/no-shadow': 2,
     /**
      * 必须使用 import type 导入类型
      */
-    "@typescript-eslint/consistent-type-imports": 1,
-    "@typescript-eslint/no-unused-vars": [
+    '@typescript-eslint/consistent-type-imports': 1,
+    '@typescript-eslint/no-unused-vars': [
       1,
-      { vars: "all", argsIgnorePattern: "^_" },
+      { vars: 'all', argsIgnorePattern: '^_' },
     ],
   },
   settings: {
-    "import/parsers": {
+    'import/parsers': {
       // 使用 TypeScript parser
-      "@typescript-eslint/parser": [".ts", ".tsx"],
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    "import/resolver": {
+    'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
       },
     },
-    "import/extensions": [".js", ".jsx", "ts", "tsx"],
+    'import/extensions': ['.js', '.jsx', 'ts', 'tsx'],
   },
   parserOptions: {
     project: true,
   },
-};
+}

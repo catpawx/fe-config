@@ -48,7 +48,7 @@ module.exports = {
    * 在任何可能的多行中输入尾逗号
    * @default 'es5'
    */
-  trailingComma: "all",
+  trailingComma: 'all',
 
   // /**
   //  * 在对象字面量声明所使用的的花括号后（{）和前（}）输出空格
@@ -66,5 +66,5 @@ module.exports = {
    * 箭头函数的参数用括号包裹
    * @default 'always'
    */
-  arrowParens: "avoid",
-};
+  arrowParens: 'avoid',
+}
