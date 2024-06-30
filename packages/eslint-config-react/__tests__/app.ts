@@ -1,9 +1,12 @@
+import path from 'path'
+
 import { ESLint } from 'eslint'
 
+const fullPath = path.join(__dirname)
 const main = async () => {
   const eslint = new ESLint()
 
-  const results = await eslint.lintFiles([`${__dirname}/code/**/*.tsx`])
+  const results = await eslint.lintFiles([`${fullPath}/code/**/*.tsx`])
 
   const formatter = await eslint.loadFormatter('stylish')
   const resultText = formatter.format(results)
