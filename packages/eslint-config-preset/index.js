@@ -25,34 +25,10 @@ module.exports = {
     ecmaVersion: 2018, // 设置 ECMAScript 版本为 2018
     sourceType: 'module', // 设置源代码类型为模块
   },
-  plugins: ['prettier', 'unicorn'], // 加载 Prettier 和 Unicorn 插件
+  plugins: ['prettier', 'unicorn', 'simple-import-sort'], // 加载 Prettier 和 Unicorn 插件
   rules: {
-    'import/order': [
-      1,
-      {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-        ],
-        pathGroups: [
-          {
-            pattern: '@/**',
-            group: 'internal',
-            position: 'after',
-          },
-        ],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
     'prettier/prettier': 'error', // 使用 Prettier 进行代码格式化
     'standard/no-callback-literal': 'off', // 允许在回调函数中使用字面量
     'unicorn/filename-case': [

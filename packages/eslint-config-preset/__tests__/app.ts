@@ -1,6 +1,6 @@
+import { ESLint } from 'eslint'
 import path from 'path'
 
-import { ESLint } from 'eslint'
 const fullPath = path.join(__dirname)
 const main = async () => {
   const eslint = new ESLint()
