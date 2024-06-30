@@ -1,6 +1,6 @@
 {
   "name": "@catpawx/eslint-config-preset",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "💪🏻 猫爪联盟前端团队 ESLint 规则",
   "authors": [
     "相甫 <xiangfu_git@163.com>"
