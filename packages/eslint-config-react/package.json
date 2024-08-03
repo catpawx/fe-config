@@ -1,6 +1,6 @@
 {
   "name": "@catpawx/eslint-config-react",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "🐾 猫爪联盟前端团队 ESLint react 规则",
   "authors": [
     "相甫 <xiangfu_git@163.com>"
@@ -21,7 +21,7 @@
     "url": "git+https://github.com/jswangtao/fe-config.git"
   },
   "keywords": [
- "eslint",
+    "eslint",
     "react",
     "typescript"
   ],
