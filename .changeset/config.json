@@ -1,11 +1,15 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.1/schema.json",
-  "changelog": "@changesets/cli/changelog",
-  "commit": false,
-  "fixed": [],
-  "linked": [["@catpawx/*"]],
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "catpawx/fe-config" }
+  ],
   "access": "public",
   "baseBranch": "main",
+  "tag": true,
+  "commit": false,
+  "fixed": [],
+  "linked": [],
   "updateInternalDependencies": "patch",
   "ignore": []
 }
