@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "lint": "eslint packages --fix --ext .js",
+    "lint": "eslint packages --fix",
     "lint:ts": "tsc --noEmit && eslint packages --ext .ts,.tsx",
     "prettier": "prettier --write 'packages/**/*.{js,json,yml,yaml,css,scss,less,ts,tsx,md}'",
     "commit": "git-cz",
