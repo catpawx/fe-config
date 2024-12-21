@@ -1,5 +1,16 @@
 # @catpawx/eslint-config-react
 
+## 2.0.0
+
+### Major Changes
+
+- 修改规则
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @catpawx/eslint-config-preset@2.0.0
+
 ## 1.0.0
 
 ### Major Changes

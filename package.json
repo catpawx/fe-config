@@ -5,14 +5,15 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
+    "lint-staged": "lint-staged --allow-empty",
     "lint": "eslint packages --fix",
     "lint:ts": "tsc --noEmit && eslint packages --ext .ts,.tsx",
     "prettier": "prettier --write 'packages/**/*.{js,json,yml,yaml,css,scss,less,ts,tsx,md}'",
-    "commit": "git-cz",
-    "prepare": "husky",
-    "lint-staged": "lint-staged --allow-empty",
     "test:eslint-config-preset": "ts-node ./packages/eslint-config-preset/__tests__/app.ts",
     "test:eslint-config-react": "ts-node ./packages/eslint-config-react/__tests__/app.ts",
+    "clean": "rimraf packages/**/node_modules && rimraf node_modules",
+    "commit": "git-cz",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "changeset publish"
@@ -31,7 +32,8 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "react": "^18.3.1",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+     "rimraf": "^6.0.1"
   },
   "config": {
     "commitizen": {
