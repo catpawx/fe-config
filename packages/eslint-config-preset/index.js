@@ -25,18 +25,12 @@ module.exports = {
     ecmaVersion: 2018, // 设置 ECMAScript 版本为 2018
     sourceType: 'module', // 设置源代码类型为模块
   },
-  plugins: ['prettier', 'unicorn', 'simple-import-sort'], // 加载 Prettier 和 Unicorn 插件
+  plugins: ['prettier', 'simple-import-sort'], // 加载插件
   rules: {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     'prettier/prettier': 'error', // 使用 Prettier 进行代码格式化
     'standard/no-callback-literal': 'off', // 允许在回调函数中使用字面量
-    'unicorn/filename-case': [
-      'error',
-      {
-        case: 'kebabCase', // 强制文件名使用 kebab-case 命名风格
-      },
-    ],
     quotes: [
       'error',
       'single',
@@ -64,12 +58,12 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:@typescript-eslint/recommended',
       ], // 继承标准规则、JSX 规则、Prettier 规则和 TypeScript 规则
-      plugins: ['prettier', 'unicorn', '@typescript-eslint'], // 加载 Prettier、Unicorn 和 TypeScript 插件
+      plugins: ['@typescript-eslint'], // 加载 TypeScript 插件
       rules: {
         'max-lines': [
           'error',
           {
-            max: 400,
+            max: 600,
             skipBlankLines: true,
             skipComments: true,
           },
@@ -103,7 +97,6 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': 'off', // 关闭要求显式模块边界类型的警告
         '@typescript-eslint/member-delimiter-style': 'off', // 关闭强制成员分隔符样式的警告
         '@typescript-eslint/no-explicit-any': 'off', // 关闭禁止使用 any 类型的警告
-        'unicorn/filename-case': 'off', // 关闭文件夹校验规则
         quotes: 'off', // 关闭引号使用的警告
         '@typescript-eslint/quotes': [
           'error',
