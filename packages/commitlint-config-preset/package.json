@@ -1,0 +1,29 @@
+{
+  "name": "@catpawx/commitlint-config-preset",
+  "version": "0.1.0",
+  "description": "🐾 猫爪联盟前端团队 commitlint 规则",
+  "authors": [
+    "相甫 <xiangfu_git@163.com>"
+  ],
+  "homepage": "https://github.com/jswangtao/fe-config#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {},
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jswangtao/fe-config.git"
+  },
+  "keywords": [
+    "commitlint"
+  ],
+  "bugs": {
+    "url": "https://github.com/jswangtao/fe-config/issues"
+  }
+}

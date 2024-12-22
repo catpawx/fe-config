@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@catpawx/commitlint-config-preset':
+        specifier: workspace:*
+        version: link:packages/commitlint-config-preset
       '@catpawx/eslint-config-preset':
         specifier: workspace:*
         version: link:packages/eslint-config-preset
@@ -53,6 +56,8 @@ importers:
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@20.14.9)(typescript@5.5.2)
+
+  packages/commitlint-config-preset: {}
 
   packages/eslint-config-preset:
     dependencies:
