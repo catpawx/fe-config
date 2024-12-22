@@ -7,6 +7,7 @@
 - [@catpawx/eslint-config-preset](https://github.com/catpawx/fe-config/tree/main/packages/eslint-config-preset)
 - [@catpawx/eslint-config-react](https://github.com/catpawx/fe-config/tree/main/packages/eslint-config-react)
 - [@catpawx/prettier-config-preset](https://github.com/catpawx/fe-config/tree/main/packages/prettier-config-preset)
+- [@catpawx/commitlint-config-preset](https://github.com/catpawx/fe-config/tree/main/packages/commitlint-config-preset)
 
 ## 鸣谢
 

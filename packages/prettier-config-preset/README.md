@@ -10,29 +10,29 @@
 
 [![](https://img.shields.io/npm/v/@catpawx/prettier-config-preset)][prettier-config-preset]
 [![](https://img.shields.io/npm/dm/@catpawx/prettier-config-preset.svg)][prettier-config-preset]
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 </div>
 
 ## 使用方式
 
 ```bash
-yarn add @catpawx/prettier-config-preset --dev
+pnpm add -D @catpawx/prettier-config-preset
 ```
 
-### package.json
-
-```json
-{
-  "prettier": "@catpawx/prettier-config-preset"
-}
-```
-
-### .prettierrc.js
+1. 第一种方式 添加 .prettierrc.js
 
 ```js
 module.exports = {
   ...require('@catpawx/prettier-config-preset'),
+  // 自定义你的规则
   semi: true,
+}
+```
+
+2.  第二种方式 修改 package.json
+
+```json
+{
+  "prettier": "@catpawx/prettier-config-preset"
 }
 ```

@@ -10,14 +10,13 @@
 
 [![](https://img.shields.io/npm/v/@catpawx/eslint-config-preset)][eslint-config-preset]
 [![](https://img.shields.io/npm/dm/@catpawx/eslint-config-preset.svg)][eslint-config-preset]
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 </div>
 
 ## 使用方式
 
 ```bash
-yarn add @catpawx/eslint-config-preset --dev
+pnpm add -D @catpawx/eslint-config-preset
 ```
 
 ```js

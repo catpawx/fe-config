@@ -10,7 +10,6 @@
 
 [![](https://img.shields.io/npm/v/@catpawx/commitlint-config-preset)][commitlint-config-preset]
 [![](https://img.shields.io/npm/dm/@catpawx/commitlint-config-preset.svg)][commitlint-config-preset]
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 </div>
 
@@ -44,16 +43,17 @@ pnpm add -D @catpawx/commitlint-config-preset cz-git @commitlint/cli commitizen
 - 如果是单体仓库
 
 ```js
-const { defineConfig } = require('./commitlintrc.cjs')
+const { defineConfig } = require('@catpawx/commitlint-config-preset')
 
-// 其中defineConfig可以传递一个对象，对象中配置完全参考commitlint的配置，会将默认配置和传递的配置合并
 module.exports = defineConfig()
 ```
+
+其中defineConfig可以传递一个对象，对象中配置完全参考[cz-git的配置](https://cz-git.qbb.sh/zh/config/) ，会将默认配置和传递的配置合并
 
 - 如果是monorepo仓库，可以配置多个scope
 
 ```js
-const { defineConfig } = require('./commitlintrc.cjs')
+const { defineConfig } = require('@catpawx/commitlint-config-preset')
 
 // const scopes = [
 //   {
